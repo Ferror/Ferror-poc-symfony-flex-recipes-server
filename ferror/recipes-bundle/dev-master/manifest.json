@@ -3,7 +3,7 @@
         "ferror/recipes-bundle": {
             "manifest": {
                 "bundles": {
-                    "Ferror\\RecipesBundle": ["all"]
+                    "Ferror\\RecipesBundle\\FerrorRecipesBundle": ["all"]
                 },
                 "copy-from-package": {
                     "config/": "%CONFIG_DIR%/"
@@ -18,7 +18,7 @@
                     }
                 }
             },
-            "ref": "37897071fb7a9f7ea09bfd56417bad4eed982dbe"
+            "ref": "3964840be33335e1b483a321e84323aeba52a7c4"
         }
     }
 }
