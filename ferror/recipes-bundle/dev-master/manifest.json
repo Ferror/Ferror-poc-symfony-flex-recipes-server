@@ -7,18 +7,18 @@
                 },
                 "copy-from-package": {
                     "config/": "%CONFIG_DIR%/"
-                },
-                "files": {
-                    "config/recipes-bundle.yaml": {
-                        "contents": [
-                            "imports:",
-                            "- { resource: \"@SyliusPlusPlugin/Resources/config/config.yaml\" }"
-                        ],
-                        "executable": false
-                    }
                 }
             },
-            "ref": "3964840be33335e1b483a321e84323aeba52a7c4"
+            "files": {
+                "config/recipes-bundle.yaml": {
+                    "contents": [
+                        "imports:",
+                        "- { resource: \"@SyliusPlusPlugin/Resources/config/config.yaml\" }"
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "a350e22cf73b329fd895ad5cfa0e9e56ce90e8f0"
         }
     }
 }
