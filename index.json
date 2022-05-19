@@ -10,6 +10,6 @@
     "_links": {
         "repository": "github.com/ferror/poc-symfony-flex-recipes-server",
         "origin_template": "{package}:{version}@github.com/ferror/poc-symfony-flex-recipes-server:master",
-        "recipe_template": "https://api.github.com/repos/ferror/poc-symfony-flex-recipes-server/contents/{package_dotted}/{version}/manifest.json"
+        "recipe_template": "https://api.github.com/repos/ferror/poc-symfony-flex-recipes-server/contents/{package}/{version}/manifest.json"
     }
 }
