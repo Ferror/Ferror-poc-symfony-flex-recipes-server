@@ -7,6 +7,9 @@
                 },
                 "copy-from-package": {
                     "config/": "%CONFIG_DIR%/"
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
                 }
             },
             "files": {
@@ -18,7 +21,7 @@
                     "executable": false
                 }
             },
-            "ref": "a350e22cf73b329fd895ad5cfa0e9e56ce90e8f0"
+            "ref": "9863bc62bfeff52061d0a94c1cfbbe0c1da319c9"
         }
     }
 }
