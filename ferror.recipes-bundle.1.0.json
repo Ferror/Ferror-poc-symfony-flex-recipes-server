@@ -1,14 +1,17 @@
 {
     "manifests": {
-        "acme/private-bundle": {
+        "ferror/recipes-bundle": {
             "manifest": {
                 "bundles": {
-                    "Acme\\PrivateBundle\\AcmePrivateBundle": [
+                    "Ferror\\RecipesBundle": [
                         "all"
                     ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%"
                 }
             },
-            "ref": "7405f3af1312d1f9121afed4dddef636c6c7ff00"
+            "ref": "36133d85002df866abae7510dd8188c4ebef31d5"
         }
     }
 }
