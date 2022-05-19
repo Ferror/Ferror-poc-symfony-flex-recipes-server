@@ -12,9 +12,49 @@
                 },
                 "copy-from-package": {
                     "config/": "%CONFIG_DIR%/"
+                },
+                "files": {
+                    "config/recipes-bundle.yaml": {
+                        "contents": [
+                            "imports:",
+                            "- { resource: \"@SyliusPlusPlugin/Resources/config/config.yaml\" }"
+                        ],
+                        "executable": false
+                    },
+                    "src/Entity/RecipesClass.php": {
+                        "contents": [
+                            "<?php",
+                            "",
+                            "declare(strict_types=1);",
+                            "",
+                            "namespace App\\Entity;",
+
+                            "use Doctrine\\ORM\\Mapping as ORM;",
+                            "use Sylius\\Component\\Core\\Model\\Channel as BaseChannel;",
+                            "use Sylius\\Component\\Core\\Model\\ChannelInterface;",
+                            "use Sylius\\Plus\\BusinessUnits\\Domain\\Model\\BusinessUnitAwareTrait;",
+                            "use Sylius\\Plus\\BusinessUnits\\Domain\\Model\\ChannelInterface as BusinessUnitsChannelInterface;",
+                            "use Sylius\\Plus\\CustomerPools\\Domain\\Model\\ChannelInterface as CustomerPoolsChannelInterface;",
+                            "use Sylius\\Plus\\CustomerPools\\Domain\\Model\\CustomerPoolAwareTrait;",
+                            "use Sylius\\Plus\\Returns\\Domain\\Model\\ChannelInterface as ReturnsChannelInterface;",
+                            "use Sylius\\Plus\\Returns\\Domain\\Model\\ReturnRequestsAllowedAwareTrait;",
+                            "",
+                            "/**",
+                            " * @ORM\\Entity",
+                            " * @ORM\\Table(name=\"sylius_channel\")",
+                            " */",
+                            "class RecipesClass extends BaseChannel implements ChannelInterface, ReturnsChannelInterface, BusinessUnitsChannelInterface, CustomerPoolsChannelInterface",
+                            "{",
+                            "    use ReturnRequestsAllowedAwareTrait;",
+                            "    use CustomerPoolAwareTrait;",
+                            "    use BusinessUnitAwareTrait;",
+                            "}"
+                        ],
+                        "executable": false
+                    }
                 }
             },
-            "ref": "0b030d5b1af16c0fb42c275c52d99162e0e6373c"
+            "ref": "2c6d0fb03fc5a8b56af28a7ae841f4f349ba0e27"
         }
     }
 }
